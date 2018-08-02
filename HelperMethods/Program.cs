@@ -26,19 +26,17 @@ namespace HelperMethods
             ReverseString(lastName);
             ReverseString(city);
 
+
             Console.ReadLine();
 
         }
 
-        private static void ReverseString(string message)
+        private static string ReverseString(string message)
         {            
             char[] messageArray = message.ToCharArray();
             Array.Reverse(messageArray);
-            foreach (char item in messageArray)
-            {
-                Console.Write(item);
-            }
-            Console.Write(" "); // adds spaces between strings
+            return String.Concat(messageArray);
+
         }
 
 
